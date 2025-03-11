@@ -171,6 +171,12 @@ function hoverStatementBox(boxSelector, iconSelector, hoverEmoji) {
   const box = document.querySelector(boxSelector);
   const icon = document.querySelector(iconSelector);
 
+  if (window.innerWidth < 992) {
+    icon.style.display = "none";
+    box.insertAdjacentHTML("afterbegin", `<span class='new-icon' style="font-size: ${window.getComputedStyle(icon).fontSize};"> ${hoverEmoji}</span>`);
+    return;
+  }
+
   if (!box || !icon) return;
 
   box.addEventListener("mouseenter", function () {

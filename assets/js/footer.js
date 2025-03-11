@@ -28,12 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                 </div>
                 <!-- Contact Section -->
-                <div class="col-lg-3 mt-4 mt-lg-0 contact-us rounded-4">
+                <div class="col-lg-3 col-10 mt-4 mt-lg-0 contact-us">
                     <h4 class="fs-1 fw-bold">Contact Us</h4>
-                    <p>ecell@rgipt.ac.in</p>
-                    <div class="d-flex justify-content-center">
+                    <p><i>ecell@rgipt.ac.in</i></p>
+                    <div>
                         <div>
-                            <input type="text" id="name" placeholder="Name">
+                            <input type="text" id="name" placeholder="Name"><br>
                             <input type="email" id="email" placeholder="E-Mail">
                         </div>
                         <button type="submit" id="submit">Submit <i class="bi bi-arrow-right"></i></button>

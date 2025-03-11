@@ -1,5 +1,4 @@
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Futura-Bold", sans-serif;
 }
 
@@ -75,18 +74,39 @@ h6 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  animation: fadeIn 2s ease-in-out;
+  animation: fade-in 2s ease-in-out;
 }
 
 .hero-text p {
   font-size: 3rem;
   margin-bottom: 30px;
-  animation: fadeIn 1.5s ease-in-out 0.5s;
+  animation: fade-in 1.5s ease-in-out 0.5s;
   opacity: 0;
   animation-fill-mode: forwards;
 }
 
-@keyframes fadeIn {
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-text p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-text p {
+    font-size: 3rem;
+  }
+}
+
+@keyframes fade-in {
   0% {
     opacity: 0;
     transform: translateY(12.5rem);
@@ -95,16 +115,6 @@ h6 {
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-text h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-text p {
-    font-size: 1.5rem;
   }
 }
 
@@ -201,29 +211,58 @@ h6 {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .section-header p {
+    font-size: 1.3rem;
+    text-align: justify;
+  }
+
+  .section-header {
+    padding: 1.5rem;
+  }
+}
+
 /*--------------------------------------------------------------
 # About Us Page
 --------------------------------------------------------------*/
-
-.vision-mission {
-  padding: 5rem;
-}
-
 .fixed-img {
   width: 100%;
   height: 25rem;
   object-fit: cover;
 }
 
+.vision-mission {
+  padding: 5rem;
+}
+
 .statement-card {
-  height: 20rem;
   border-radius: 2rem;
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   background-color: rgba(10, 10, 10, 1);
   border: 5px solid white;
+  margin-bottom: 2rem;
+}
 
+@media (min-width: 768px) {
+  .statement-card {
+    height: 22.5rem;
+  }
+
+  .activity-card {
+    height: 21rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .statement-card {
+    height: 20rem;
+  }
+
+  .activity-card {
+    height: 12.5rem;
+  }
 }
 
 .statement-card:hover {
@@ -241,11 +280,6 @@ h6 {
 .statement-text {
   padding: 0.5rem;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.statement-card:hover .statement-text {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .vision-box:hover h3 {
@@ -273,7 +307,6 @@ h6 {
 }
 
 .activity-card {
-  height: 12.5rem;
   padding-left: 1.5rem;
   border-radius: 2rem;
   position: relative;
@@ -305,6 +338,66 @@ h6 {
 .competitions {
   border: 4px solid #f4c056;
 }
+
+@media (max-width: 992px) {
+  .about-content p {
+    text-align: justify;
+  }
+
+  #aboutImageCarousel img {
+    width: 100%;
+    min-width: 300px;
+    max-height: 200px;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .vision-mission {
+    padding: 5rem 2rem;
+  }
+
+  .statement-card {
+    box-shadow: 0 8px 20px #333;
+    color: black;
+    background-color: white;
+  }
+
+  .vision-box h3 {
+    color: #773841;
+  }
+
+  .vision-box {
+    border: 5px solid #773841;
+  }
+
+  .mission-box h3 {
+    color: #e23a65;
+  }
+
+  .mission-box {
+    border: 5px solid #e23a65;
+  }
+
+  .values-box h3 {
+    color: #3697e6;
+  }
+
+  .values-box {
+    border: 5px solid #3697e6;
+  }
+
+  .what-we-do {
+    padding: 0 2rem;
+  }
+
+  .activity-card {
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Team Page
@@ -412,52 +505,6 @@ h6 {
     border-radius: 50%;
   }
 }
-
-/*--------------------------------------------------------------
-# Page Header
---------------------------------------------------------------*/
-.page-header {
-  padding: 120px 0 60px 0;
-  min-height: 30vh;
-  position: relative;
-}
-
-.page-header h2 {
-  font-size: 56px;
-  font-weight: 500;
-  color: #fff;
-  font-family: var(--font-secondary);
-}
-
-@media (max-width: 768px) {
-  .page-header h2 {
-    font-size: 36px;
-  }
-}
-
-.page-header p {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.page-header .cta-btn {
-  font-family: var(--font-primary);
-  font-weight: 400;
-  font-size: 14px;
-  display: inline-block;
-  padding: 12px 40px;
-  border-radius: 4px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: 0.3s;
-  color: #fff;
-  background: var(--color-primary);
-}
-
-.page-header .cta-btn:hover {
-  background: #2cbc85;
-}
-
-
 
 /*--------------------------------------------------------------
 # Scroll top button
@@ -624,7 +671,6 @@ h6 {
   margin: 0;
   font-weight: 400;
   color: #fff;
-  font-family: var(--font-secondary);
 }
 
 .header .logo i {
@@ -985,7 +1031,6 @@ h6 {
   font-size: 38px;
   font-weight: 700;
   color: #fff;
-  font-family: var(--font-secondary);
 }
 
 .hero h2 span {
@@ -1041,41 +1086,32 @@ h6 {
 --------------------------------------------------------------*/
 .contact-us {
   text-align: left;
-  color: black;
-  background-color: white;
-  padding: 1rem;
-  transition: transform 0.3s ease-in-out;
-}
-
-.contact-us:hover {
-  transform: scale(1.2);
 }
 
 .contact-us input {
   margin: 0.4rem;
-  color: #000;
-  background-color: white;
-  font-family: 'Verdana';
-  border: 2px solid #333;
-  width: 10rem;
+  margin-left: 0;
+  border: 0;
+  width: 100%;
   border-radius: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .contact-us button {
-  position: relative;
-  left: -0.75rem;
-  background-color: var(--color-primary);
   color: white;
+  position: relative;
+  background-color: var(--color-primary);
   border: 0;
-  border-radius: 1rem;
-  padding: 0.5rem;
-  width: 10rem;
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .contact-us button:hover {
-  background-color: #000;
-  transform: translateX(0.5rem);
+  background-color: white;
+  color: #000;
 }
 
 .thanks {
@@ -1093,25 +1129,10 @@ h6 {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.footer .copyright {
-  text-align: center;
-}
-
-.footer .credits {
-  padding-top: 6px;
-  text-align: center;
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.footer .credits a {
-  color: var(--color-primary);
-}
-
 .social-icon {
   transition: all 0.3s ease-in-out;
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1153,17 +1174,53 @@ h6 {
   background: #1A6ED8;
 }
 
-/* Twitter */
 .twt:hover {
   background: #1DA1F2;
 }
 
-/* LinkedIn */
 .lnk:hover {
   background: #0077B5;
 }
 
-/* Instagram */
 .insta:hover {
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+@media (max-width: 992px) {
+  .social-icon {
+    width: 4rem;
+    height: 4rem;
+    color: white;
+  }
+
+  .fb {
+    background: #1A6ED8;
+  }
+
+  .twt {
+    background: #1DA1F2;
+  }
+
+  .lnk {
+    background: #0077B5;
+  }
+
+  .insta {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  }
+
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .contact-us button,
+  .contact-us input {
+    width: 100%;
+    height: 3rem;
+    border-radius: 1rem;
+  }
 }
