@@ -10,19 +10,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
                         <a href="#" class="social-icon fb text-decoration-none">
-                            <i class="fab fa-facebook-f"></i>
+                            <i class="bi bi-facebook"></i>
                             <span class="d-none d-md-inline">Facebook</span>
                         </a>
                         <a href="#" class="social-icon twt text-decoration-none">
-                            <i class="fab fa-twitter"></i>
+                            <i class="bi bi-twitter"></i>
                             <span class="d-none d-md-inline">Twitter</span>
                         </a>
                         <a href="#" class="social-icon lnk text-decoration-none">
-                            <i class="fab fa-linkedin-in"></i>
+                            <i class="bi bi-linkedin"></i>
                             <span class="d-none d-md-inline">LinkedIn</span>
                         </a>
                         <a href="#" class="social-icon insta text-decoration-none">
-                            <i class="fab fa-instagram"></i>
+                            <i class="bi bi-instagram"></i>
                             <span class="d-none d-md-inline">Instagram</span>
                         </a>
                     </div>
