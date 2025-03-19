@@ -133,12 +133,13 @@
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
+        // Changes Hero content to abbreviation if device width is small
         function updateText() {
             const title = document.getElementById("hero-title");
             const subtitle = document.getElementById("hero-subtitle");
             if (window.innerWidth < 576) {
                 title.innerText = "E-CELL";
-                title.setAttribute('style', 'font-size: 6rem;');
+                title.setAttribute('style', 'font-size: 5rem;');
                 subtitle.setAttribute('style', 'font-size: 5rem;');
             } else {
                 title.innerText = "Entrepreneurship Cell";
