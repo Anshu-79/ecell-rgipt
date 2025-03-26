@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>E-CELL RGIPT</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.jpg" rel="icon">
+    <link href="assets/img/apple-touch-icon.jpg" rel="apple-touch-icon">
+
+    <!-- Bootstrap CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Local Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+                <img src="assets/img/favicon.png" alt="E-CELL Logo">
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                </ul>
+            </nav>
+
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-fullscreen d-flex flex-column align-items-center justify-content-center text-center">
+        <div class="hero-text">
+            <h1 data-aos="fade-up" data-aos-duration="1000" id="hero-title">Entrepreneurship Cell</h1>
+            <p data-aos="fade-up" data-aos-duration="1500" id="hero-subtitle">RGIPT</p>
+        </div>
+    </section>
+
+    <main id="main">
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="section-header">
+                            <h2>About E-Cell RGIPT</h2>
+                            <p>The Entrepreneurship Cell (E-Cell) of RGIPT is a student-run organization that aims to
+                                foster the spirit of entrepreneurship among students. We provide a platform for aspiring
+                                entrepreneurs to transform their innovative ideas into successful ventures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Events Section -->
+        <section id="featured-events" class="featured-events">
+            <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h2>Featured Events</h2>
+                </div>
+                <div class="row gy-4 px-3">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="event-card">
+                            <img src="assets/img/events/event-1.JPG" class="img-fluid" alt="">
+                            <div class="event-info">
+                                <h4 class="pt-2">Corporate Duel</h4>
+                                <p>Event Description here...</p>
+                                <a href="events.html" class="read-more">Learn More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="event-card">
+                            <img src="assets/img/events/event-1.JPG" class="img-fluid" alt="">
+                            <div class="event-info">
+                                <h4 class="pt-2">Capital Quest</h4>
+                                <p>Capital Quest description here...</p>
+                                <a href="events.html" class="read-more">Learn More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="event-card">
+                            <img src="assets/img/events/event-1.JPG" class="img-fluid" alt="">
+                            <div class="event-info">
+                                <h4 class="pt-2">Cryptoversity</h4>
+                                <p>Cryptoversity description here...</p>
+                                <a href="events.html" class="read-more">Learn More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader">
+        <div class="line"></div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    <script src="assets/js/footer.js"></script>
+
+    <!-- Scripts -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Changes Hero content to abbreviation if device width is small
+        function updateText() {
+            const title = document.getElementById("hero-title");
+            const subtitle = document.getElementById("hero-subtitle");
+            if (window.innerWidth < 576) {
+                title.innerText = "E-CELL";
+                title.setAttribute('style', 'font-size: 5rem;');
+                subtitle.setAttribute('style', 'font-size: 5rem;');
+            } else {
+                title.innerText = "Entrepreneurship Cell";
+            }
+        }
+
+        window.addEventListener("resize", updateText);
+        updateText();
+    </script>
+</body>
+
+</html>
