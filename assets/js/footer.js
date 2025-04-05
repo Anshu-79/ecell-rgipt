@@ -17,10 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
                             <i class="bi bi-twitter"></i>
                             <span class="d-none d-md-inline">Twitter</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/e-cell-rgipt-461705220" class="social-icon lnk text-decoration-none">
+
+                        <a href="https://www.linkedin.com/in/e-cell-rgipt-461705220" class="social-icon lnk text-decoration-none">                
                             <i class="bi bi-linkedin"></i>
                             <span class="d-none d-md-inline">LinkedIn</span>
                         </a>
+
                         <a href="https://www.instagram.com/ecell_rgipt" class="social-icon insta text-decoration-none">
                             <i class="bi bi-instagram"></i>
                             <span class="d-none d-md-inline">Instagram</span>
@@ -45,3 +47,4 @@ document.addEventListener("DOMContentLoaded", function () {
     </footer>
     `;
 });
+
