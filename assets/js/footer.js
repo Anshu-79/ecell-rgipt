@@ -9,19 +9,21 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p class="fs-4">Visit our social media handles</p>
 
                     <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
-                        <a href="#" class="social-icon fb text-decoration-none">
+                        <a href="https://www.facebook.com/profile.php?id=100083168575127" class="social-icon fb text-decoration-none">
                             <i class="bi bi-facebook"></i>
                             <span class="d-none d-md-inline">Facebook</span>
                         </a>
-                        <a href="#" class="social-icon twt text-decoration-none">
+                        <a href="https://x.com/ecell_rgipt" class="social-icon twt text-decoration-none">
                             <i class="bi bi-twitter"></i>
                             <span class="d-none d-md-inline">Twitter</span>
                         </a>
-                        <a href="#" class="social-icon lnk text-decoration-none">
+                        <a href="https://www.linkedin.com/in/e-cell-rgipt-461705220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon lnk text-decoration-none">
                             <i class="bi bi-linkedin"></i>
+                            
+                
                             <span class="d-none d-md-inline">LinkedIn</span>
                         </a>
-                        <a href="#" class="social-icon insta text-decoration-none">
+                        <a href="https://www.instagram.com/ecell_rgipt?igsh=OW44a2JveW9pZXh6" class="social-icon insta text-decoration-none">
                             <i class="bi bi-instagram"></i>
                             <span class="d-none d-md-inline">Instagram</span>
                         </a>
@@ -45,3 +47,4 @@ document.addEventListener("DOMContentLoaded", function () {
     </footer>
     `;
 });
+
