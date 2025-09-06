@@ -17,13 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
                             <i class="bi bi-twitter"></i>
                             <span class="d-none d-md-inline">Twitter</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/e-cell-rgipt-461705220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon lnk text-decoration-none">
+
+                        <a href="https://www.linkedin.com/in/e-cell-rgipt-461705220" class="social-icon lnk text-decoration-none">                
                             <i class="bi bi-linkedin"></i>
-                            
-                
                             <span class="d-none d-md-inline">LinkedIn</span>
                         </a>
-                        <a href="https://www.instagram.com/ecell_rgipt?igsh=OW44a2JveW9pZXh6" class="social-icon insta text-decoration-none">
+
+                        <a href="https://www.instagram.com/ecell_rgipt" class="social-icon insta text-decoration-none">
                             <i class="bi bi-instagram"></i>
                             <span class="d-none d-md-inline">Instagram</span>
                         </a>
@@ -32,14 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 <!-- Contact Section -->
                 <div class="col-lg-3 col-10 mt-4 mt-lg-0 contact-us">
                     <h4 class="fs-1 fw-bold">Contact Us</h4>
-                    <p><i>ecell@rgipt.ac.in</i></p>
-                    <div>
-                        <div>
-                            <input type="text" id="name" placeholder="Name"><br>
-                            <input type="email" id="email" placeholder="E-Mail">
-                        </div>
-                        <button type="submit" id="submit">Submit <i class="bi bi-arrow-right"></i></button>
-                    </div>
+                    <p><i>  ecell@rgipt.ac.in</i></p>
+                    
                 </div>
             </div>
             <p class="thanks pt-5">💟 With love from <span>Tech Team, E-Cell RGIPT</span></p>
